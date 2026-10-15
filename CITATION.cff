@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "WattWitness: explainable trust checks for microgrid telemetry"
+type: software
+version: 1.0.0
+date-released: 2026-10-15
+authors:
+  - name: "WattWitness team"
+abstract: >-
+  Phase 1 prototype for the EnergyMind Tunisia challenge: a one-year simulated
+  microgrid node with modelled meter error, controlled fault injection, physics
+  cross-checks with limits learned from training data, explained alerts and
+  human review.
+keywords:
+  - microgrid
+  - data quality
+  - anomaly detection
+  - explainability
+  - human oversight
+license: MIT

@@ -1,0 +1,223 @@
+{
+  "seed": 7203,
+  "rows": 8784,
+  "meter_model": {
+    "PV Power": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "Wind Power": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "Building Load": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "Grid Power": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "Battery Power": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "Battery SOC": {
+      "relative_sigma": 0.003,
+      "absolute_sigma": 0.5,
+      "resolution": 0.1
+    },
+    "Curtailed Power": {
+      "relative_sigma": 0.01,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "PV Inverter AC Output": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "PV Inverter DC Input": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.1,
+      "resolution": 0.1
+    },
+    "PV DC Voltage": {
+      "relative_sigma": 0.002,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "PV DC Current": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "PV Inverter AC Voltage LL": {
+      "relative_sigma": 0.002,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "PV Inverter AC Current": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "Grid Voltage LL": {
+      "relative_sigma": 0.002,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "Grid Current": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "Battery Voltage": {
+      "relative_sigma": 0.002,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    },
+    "Battery Current": {
+      "relative_sigma": 0.005,
+      "absolute_sigma": 0.2,
+      "resolution": 0.1
+    }
+  },
+  "dropout_start_probability_per_hour": 0.003,
+  "natural_gap_events": 18,
+  "rows_with_any_missing_value": 39,
+  "missing_cells": 159,
+  "gaps": [
+    {
+      "start_index": 1218,
+      "end_index": 1218,
+      "start_time": "2023-07-21 18:00:00",
+      "duration_hours": 1,
+      "device": "building meter"
+    },
+    {
+      "start_index": 2213,
+      "end_index": 2214,
+      "start_time": "2023-09-01 05:00:00",
+      "duration_hours": 2,
+      "device": "PV inverter"
+    },
+    {
+      "start_index": 2290,
+      "end_index": 2291,
+      "start_time": "2023-09-04 10:00:00",
+      "duration_hours": 2,
+      "device": "grid meter"
+    },
+    {
+      "start_index": 2763,
+      "end_index": 2764,
+      "start_time": "2023-09-24 03:00:00",
+      "duration_hours": 2,
+      "device": "building meter"
+    },
+    {
+      "start_index": 2859,
+      "end_index": 2861,
+      "start_time": "2023-09-28 03:00:00",
+      "duration_hours": 3,
+      "device": "building meter"
+    },
+    {
+      "start_index": 4202,
+      "end_index": 4203,
+      "start_time": "2023-11-23 02:00:00",
+      "duration_hours": 2,
+      "device": "whole data logger"
+    },
+    {
+      "start_index": 4297,
+      "end_index": 4297,
+      "start_time": "2023-11-27 01:00:00",
+      "duration_hours": 1,
+      "device": "battery management system"
+    },
+    {
+      "start_index": 4306,
+      "end_index": 4308,
+      "start_time": "2023-11-27 10:00:00",
+      "duration_hours": 3,
+      "device": "PV inverter"
+    },
+    {
+      "start_index": 4755,
+      "end_index": 4756,
+      "start_time": "2023-12-16 03:00:00",
+      "duration_hours": 2,
+      "device": "building meter"
+    },
+    {
+      "start_index": 4892,
+      "end_index": 4894,
+      "start_time": "2023-12-21 20:00:00",
+      "duration_hours": 3,
+      "device": "building meter"
+    },
+    {
+      "start_index": 5796,
+      "end_index": 5797,
+      "start_time": "2024-01-28 12:00:00",
+      "duration_hours": 2,
+      "device": "building meter"
+    },
+    {
+      "start_index": 5945,
+      "end_index": 5947,
+      "start_time": "2024-02-03 17:00:00",
+      "duration_hours": 3,
+      "device": "battery management system"
+    },
+    {
+      "start_index": 6481,
+      "end_index": 6483,
+      "start_time": "2024-02-26 01:00:00",
+      "duration_hours": 3,
+      "device": "battery management system"
+    },
+    {
+      "start_index": 6583,
+      "end_index": 6584,
+      "start_time": "2024-03-01 07:00:00",
+      "duration_hours": 2,
+      "device": "battery management system"
+    },
+    {
+      "start_index": 7004,
+      "end_index": 7006,
+      "start_time": "2024-03-18 20:00:00",
+      "duration_hours": 3,
+      "device": "PV inverter"
+    },
+    {
+      "start_index": 7171,
+      "end_index": 7173,
+      "start_time": "2024-03-25 19:00:00",
+      "duration_hours": 3,
+      "device": "PV inverter"
+    },
+    {
+      "start_index": 8244,
+      "end_index": 8244,
+      "start_time": "2024-05-09 12:00:00",
+      "duration_hours": 1,
+      "device": "grid meter"
+    },
+    {
+      "start_index": 8302,
+      "end_index": 8302,
+      "start_time": "2024-05-11 22:00:00",
+      "duration_hours": 1,
+      "device": "building meter"
+    }
+  ]
+}

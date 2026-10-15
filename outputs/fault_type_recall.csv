@@ -1,0 +1,7 @@
+fault_type,events,affected_rows,rules_recall,physics_recall,hybrid_recall,events_detected
+delayed_signal,3,36,0.0,1.0,1.0,3
+frozen,3,21,0.7142857142857143,0.9523809523809523,1.0,3
+gradual_drift,3,69,0.014492753623188406,0.7681159420289855,0.782608695652174,3
+missing,3,12,1.0,0.0,1.0,3
+plausible_bias,3,18,0.0,0.7777777777777778,0.7777777777777778,3
+spike,3,3,0.3333333333333333,1.0,1.0,3

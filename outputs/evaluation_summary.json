@@ -1,0 +1,131 @@
+{
+  "test_period_start": "2024-04-02 00:00:00",
+  "test_period_end": "2024-05-31 23:00:00",
+  "training_rows": 7344,
+  "test_rows": 1440,
+  "injected_events": 18,
+  "training_alert_rate_pct": 0.24633912686465032,
+  "labelled_fault_rows": 159,
+  "natural_gap_rows_in_test": 2,
+  "physics_thresholds": {
+    "power_balance_kw": 6.803280000000002,
+    "pv_dc_kw": 7.597160640000047,
+    "pv_ac_kw": 7.190334812597633,
+    "grid_kw": 3.892090064660357,
+    "battery_current_a": 6.425142395134391,
+    "pv_source_vs_inverter_kw": 6.920399999999967
+  },
+  "isolation_forest_threshold": 0.5753036713946245,
+  "events_detected": 18,
+  "events_fully_detected": 14,
+  "metrics": [
+    {
+      "detector": "Rules only",
+      "precision": 1.0,
+      "recall": 0.18238993710691823,
+      "f1": 0.30851063829787234,
+      "average_precision": 0.2727932750763202,
+      "tp": 29,
+      "fp": 0,
+      "fn": 130,
+      "tn": 1279
+    },
+    {
+      "detector": "Physical checks only",
+      "precision": 0.984375,
+      "recall": 0.7924528301886793,
+      "f1": 0.8780487804878049,
+      "average_precision": 0.8030192943553678,
+      "tp": 126,
+      "fp": 2,
+      "fn": 33,
+      "tn": 1277
+    },
+    {
+      "detector": "Rules + physics (selected)",
+      "precision": 0.9859154929577465,
+      "recall": 0.8805031446540881,
+      "f1": 0.9302325581395349,
+      "average_precision": 0.8813144874618554,
+      "tp": 140,
+      "fp": 2,
+      "fn": 19,
+      "tn": 1277
+    },
+    {
+      "detector": "Isolation Forest",
+      "precision": 0.26744186046511625,
+      "recall": 0.14465408805031446,
+      "f1": 0.18775510204081633,
+      "average_precision": 0.18170014343498248,
+      "tp": 23,
+      "fp": 63,
+      "fn": 136,
+      "tn": 1216
+    },
+    {
+      "detector": "Full hybrid (rules + physics + Isolation Forest)",
+      "precision": 0.6844660194174758,
+      "recall": 0.8867924528301887,
+      "f1": 0.7726027397260274,
+      "average_precision": 0.6194966854954407,
+      "tp": 141,
+      "fp": 65,
+      "fn": 18,
+      "tn": 1214
+    }
+  ],
+  "untouched_test_alarm_rates": [
+    {
+      "detector": "Rules only",
+      "untouched_test_rows": 1438,
+      "alarm_rows": 1,
+      "alarm_rate_pct": 0.06954102920723226,
+      "natural_gap_rows": 2,
+      "natural_gap_rows_flagged": 2,
+      "interpretation": "alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate"
+    },
+    {
+      "detector": "Physical checks only",
+      "untouched_test_rows": 1438,
+      "alarm_rows": 2,
+      "alarm_rate_pct": 0.13908205841446453,
+      "natural_gap_rows": 2,
+      "natural_gap_rows_flagged": 0,
+      "interpretation": "alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate"
+    },
+    {
+      "detector": "Rules + physics (selected)",
+      "untouched_test_rows": 1438,
+      "alarm_rows": 3,
+      "alarm_rate_pct": 0.2086230876216968,
+      "natural_gap_rows": 2,
+      "natural_gap_rows_flagged": 2,
+      "interpretation": "alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate"
+    },
+    {
+      "detector": "Isolation Forest",
+      "untouched_test_rows": 1438,
+      "alarm_rows": 80,
+      "alarm_rate_pct": 5.563282336578582,
+      "natural_gap_rows": 2,
+      "natural_gap_rows_flagged": 0,
+      "interpretation": "alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate"
+    },
+    {
+      "detector": "Full hybrid (rules + physics + Isolation Forest)",
+      "untouched_test_rows": 1438,
+      "alarm_rows": 83,
+      "alarm_rate_pct": 5.771905424200279,
+      "natural_gap_rows": 2,
+      "natural_gap_rows_flagged": 2,
+      "interpretation": "alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate"
+    }
+  ],
+  "notes": [
+    "All injected faults are synthetic and generated for this experiment.",
+    "Physics limits are learned from the training period only (99.9th percentile + 20%).",
+    "Untouched-window alert rate is not a verified false-positive rate: the simulation has no independent fault labels.",
+    "This evaluates one synthetic simulation with modelled meter error, not a real microgrid."
+  ]
+}

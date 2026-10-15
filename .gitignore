@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+# Do not commit the original base export unless redistribution rights are confirmed.
+data/base_simulation_export.csv
+outputs/operator_review_decisions*.csv
+reports/rendered/
+reports/contact_sheet.png
+reports/pdf_qa/

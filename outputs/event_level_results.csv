@@ -1,0 +1,19 @@
+event_id,fault_type,severity,altered_rows,flagged_rows,detected,fully_detected,hours_to_first_flag
+F01,spike,single-sample upward spike of +200 kW,1,1,True,True,0
+F02,frozen,sensor holds one value for 8 hours,7,7,True,True,0
+F03,gradual_drift,linear positive drift reaching 35% of the reading (at least 25 kW),23,18,True,False,4
+F04,missing,four missing hourly values,4,4,True,True,0
+F05,delayed_signal,PV signal replayed with a 3-hour delay,12,12,True,True,0
+F06,plausible_bias,grid-current reading increased by 12%,6,6,True,True,0
+F07,spike,single-sample upward spike of +80 kW,1,1,True,True,0
+F08,frozen,sensor holds one value for 8 hours,7,7,True,True,0
+F09,gradual_drift,linear positive drift reaching 35% of the reading (at least 25 kW),23,18,True,False,4
+F10,missing,four missing hourly values,4,4,True,True,0
+F11,delayed_signal,PV signal replayed with a 3-hour delay,12,12,True,True,0
+F12,plausible_bias,grid-current reading increased by 8%,6,6,True,True,0
+F13,spike,single-sample upward spike of +40 kW,1,1,True,True,0
+F14,frozen,sensor holds one value for 8 hours,7,7,True,True,0
+F15,gradual_drift,linear positive drift reaching 35% of the reading (at least 25 kW),23,18,True,False,5
+F16,missing,four missing hourly values,4,4,True,True,0
+F17,delayed_signal,PV signal replayed with a 3-hour delay,12,12,True,True,0
+F18,plausible_bias,grid-current reading increased by 5%,6,2,True,False,1

@@ -1,0 +1,19 @@
+event_id,fault_type,affected_signal,start_index,end_index,start_time,end_time,duration_rows,altered_rows,severity,seed
+F01,spike,Grid Power,68,68,2024-04-04 20:00:00,2024-04-04 20:00:00,1,1,single-sample upward spike of +200 kW,4152026
+F02,frozen,PV Power,105,112,2024-04-06 09:00:00,2024-04-06 16:00:00,8,7,sensor holds one value for 8 hours,4152026
+F03,gradual_drift,Building Load,150,173,2024-04-08 06:00:00,2024-04-09 05:00:00,24,23,linear positive drift reaching 35% of the reading (at least 25 kW),4152026
+F04,missing,Battery SOC,193,196,2024-04-10 01:00:00,2024-04-10 04:00:00,4,4,four missing hourly values,4152026
+F05,delayed_signal,PV Power,248,259,2024-04-12 08:00:00,2024-04-12 19:00:00,12,12,PV signal replayed with a 3-hour delay,4152026
+F06,plausible_bias,Grid Current,311,316,2024-04-14 23:00:00,2024-04-15 04:00:00,6,6,grid-current reading increased by 12%,4152026
+F07,spike,Grid Power,500,500,2024-04-22 20:00:00,2024-04-22 20:00:00,1,1,single-sample upward spike of +80 kW,4152026
+F08,frozen,PV Power,537,544,2024-04-24 09:00:00,2024-04-24 16:00:00,8,7,sensor holds one value for 8 hours,4152026
+F09,gradual_drift,Building Load,582,605,2024-04-26 06:00:00,2024-04-27 05:00:00,24,23,linear positive drift reaching 35% of the reading (at least 25 kW),4152026
+F10,missing,Battery SOC,625,628,2024-04-28 01:00:00,2024-04-28 04:00:00,4,4,four missing hourly values,4152026
+F11,delayed_signal,PV Power,680,691,2024-04-30 08:00:00,2024-04-30 19:00:00,12,12,PV signal replayed with a 3-hour delay,4152026
+F12,plausible_bias,Grid Current,740,745,2024-05-02 20:00:00,2024-05-03 01:00:00,6,6,grid-current reading increased by 8%,4152026
+F13,spike,Grid Power,932,932,2024-05-10 20:00:00,2024-05-10 20:00:00,1,1,single-sample upward spike of +40 kW,4152026
+F14,frozen,PV Power,969,976,2024-05-12 09:00:00,2024-05-12 16:00:00,8,7,sensor holds one value for 8 hours,4152026
+F15,gradual_drift,Building Load,1014,1037,2024-05-14 06:00:00,2024-05-15 05:00:00,24,23,linear positive drift reaching 35% of the reading (at least 25 kW),4152026
+F16,missing,Battery SOC,1057,1060,2024-05-16 01:00:00,2024-05-16 04:00:00,4,4,four missing hourly values,4152026
+F17,delayed_signal,PV Power,1112,1123,2024-05-18 08:00:00,2024-05-18 19:00:00,12,12,PV signal replayed with a 3-hour delay,4152026
+F18,plausible_bias,Grid Current,1172,1177,2024-05-20 20:00:00,2024-05-21 01:00:00,6,6,grid-current reading increased by 5%,4152026

@@ -1,0 +1,6 @@
+detector,untouched_test_rows,alarm_rows,alarm_rate_pct,natural_gap_rows,natural_gap_rows_flagged,interpretation
+Rules only,1438,1,0.06954102920723226,2,2,alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate
+Physical checks only,1438,2,0.13908205841446453,2,0,alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate
+Rules + physics (selected),1438,3,0.2086230876216968,2,2,alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate
+Isolation Forest,1438,80,5.563282336578582,2,0,alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate
+Full hybrid (rules + physics + Isolation Forest),1438,83,5.771905424200279,2,2,alert rate on the unmodified window (natural gaps excluded); not a verified false-positive rate
